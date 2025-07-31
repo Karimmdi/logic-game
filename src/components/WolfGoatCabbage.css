@@ -1,0 +1,131 @@
+.wgc-root {
+  text-align: center;
+  padding: 2vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.wgc-title {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.wgc-subtitle {
+  color: #388e3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.wgc-rules-title {
+  color: #fbc02d;
+  font-size: 1.1rem;
+}
+
+.wgc-rules-list {
+  text-align: left;
+  display: inline-block;
+  background: #fffde7;
+  border-radius: 10px;
+  padding: 10px 5vw;
+  border: 2px solid #fbc02d;
+  font-size: 1rem;
+  max-width: 95vw;
+}
+
+.banks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 2vw;
+  gap: 2vw;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid #1976d2;
+  border-radius: 12px;
+  background: #e3f2fd;
+  padding: 2vw;
+  box-shadow: 0 2px 8px #b3e5fc;
+  min-height: 180px;
+
+}
+
+.bank-side {
+  flex: 1 1 250px;
+  min-width: 180px;
+  max-width: 350px;
+  background: #fff;
+  border: 2px solid #1976d2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #b3e5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.bank-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.bank-title {
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.fun-btn {
+  font-size: 1rem;
+  padding: 20px;
+  margin: 4px;
+  border-radius: 10px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #90caf9;
+  transition: background 0.2s, transform 0.2s;
+
+}
+.fun-btn:hover:enabled {
+  background: #1565c0;
+  transform: scale(1.05);
+}
+.fun-btn:disabled {
+  background: #bdbdbd;
+  color: #eee;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .banks-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1vw !important;
+    padding: 2vw 1vw !important;
+  }
+  .fun-btn {
+    width: 90vw;
+    max-width: 350px;
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+}
+@media (max-width: 400px) {
+  .fun-btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+
+
+}
