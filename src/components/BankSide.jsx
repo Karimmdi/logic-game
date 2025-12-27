@@ -6,7 +6,7 @@ const BankSide = ({ side, items, itemInBoat, handleItemClick }) => (
       items[item] === side && itemInBoat !== item ? (
         <div key={item} className="bank-item-row">
           <span>
-            {item === 'wolf' ? '🐺' : item === 'goat' ? '🐑' : '🥬'} {item.charAt(0).toUpperCase() + item.slice(1)}
+            {item === 'wolf' ? '🐺 ' : item === 'goat' ? '🐑 ' : '🥬 '} {item.charAt(0).toUpperCase() + item.slice(1)}
           </span>
           <button className="fun-btn" onClick={() => handleItemClick(item)}>
             Board
@@ -14,7 +14,7 @@ const BankSide = ({ side, items, itemInBoat, handleItemClick }) => (
         </div>
       ) : null
     )}
-    {['wolf', 'goat', 'cabbage'].map((item) =>
+    {[' wolf', ' goat', ' cabbage'].map((item) =>
       itemInBoat === item && items.boat === side ? (
         <div key={item + '-boat'} className="bank-item-row">
           <span>
